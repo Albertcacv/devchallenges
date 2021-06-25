@@ -92,3 +92,41 @@ footer {
 .username {
     text-decoration: underline;
 }
+
+@media (min-width: 1100px) {
+    .desktop {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section {
+        width: 40%;
+    }
+    main {
+        height: 600px;
+        width: 40%;
+    }
+    .main-subtitle {
+        margin-left: 6rem;
+    }
+    .main-title {
+        width: 60%;
+        margin-bottom: 36px;
+    }
+    .paragraph__content {
+        margin-left: 10rem;
+        width: 40%;
+    }
+    .returnBtn {
+        width: 216px;
+        height: 68px;
+        margin-left: 10rem;
+    }
+    footer {
+        position: absolute;
+        width: 60%;
+        top: 750px;
+        left: 400px;
+    }
+}
