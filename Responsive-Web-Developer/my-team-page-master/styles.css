@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1 {
+    width: 278px;
+    margin-top: 71px;
+    margin-left: 12px;
+    margin-right: 30px;
+    font-family: 'PT Serif';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0.045em;
+    line-height: 48px;
+}
+
+h2 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    height: 27px;
+    line-height: 27px;
+    margin-left: 12px;
+    margin-right: 246px;
+    margin-top: 38px;
+    text-transform: uppercase;
+    width: 117px;
+}
+
+.header__description {
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 12px;
+}
+
+.team {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.team__item {
+    position: relative;
+    width: 178px;
+    height: 284px;
+    margin-left: 19px;
+}
+
+.img__section {
+    display: flex;
+}
+
+.team__img {
+    width: 138px;
+    height: 200px;
+}
+
+.team__name {
+    margin-top: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.team__job {
+    font-family: 'PT Serif';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 13px;
+    margin-left: 2px;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+}
+
+.descentred {
+    margin-left: 0;
+    margin-top: 49px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: #a9a9a9;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.username {
+    text-decoration: underline;
+}
