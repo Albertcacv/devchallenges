@@ -24,7 +24,7 @@ h2 {
     line-height: 27px;
     margin-left: 12px;
     margin-right: 246px;
-    margin-top: 38px;
+    margin-top: 10px;
     text-transform: uppercase;
     width: 117px;
 }
@@ -96,4 +96,33 @@ footer {
 
 .username {
     text-decoration: underline;
+}
+
+@media (min-width:581px) {
+    header {
+        margin: 0 auto;
+        ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__text {
+        margin-left: 215px;
+        margin-top: 90px;
+        width: 460px;
+        height: 134px;
+    }
+    .header__description {
+        width: 310px;
+    }
+    .team {
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
