@@ -1,95 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Portfolio | DevChallenges</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
+    <div class="container">
+      <header class="header">
+        <img class="header__photo" src="assets/images/profile_pic.jpg" />
+        <h1 class="header__title">Billy Pearson</h1>
+        <h2 class="header__subtitle">Front-end developer</h2>
+        <div class="contact">
+          <p class="contact__item">
+            <img
+              src="assets/images/email.png"
+              alt="email icon"
+              class="contact__icon"
+            />
+            billy@example.com
+          </p>
+          <p class="contact__item">
+            <img
+              src="assets/images/call.png"
+              alt="phone icon"
+              class="contact__icon"
+            />
+            (+603) 546 624 342
+          </p>
+        </div>
+        <p class="header__description">
+          Self-motivated developer, who is willing to learn and create
+          outstanding UI applications.
         </p>
-      </div>
+      </header>
+      <section class="skills">
+        <article class="skills__content">
+          <h2 class="skills__title">FRONT END</h2>
+          <span class="skills__item"
+            >React <progress value="60" max="100"
+          /></span>
+          <span class="skills__item"
+            >Javascript <progress value="80" max="100"
+          /></span>
+          <span class="skills__item"
+            >CSS <progress value="90" max="100"
+          /></span>
+          <span class="skills__item"
+            >Vue <progress value="60" max="100"
+          /></span>
+          <span class="skills__item"
+            >Redux <progress value="70" max="100"
+          /></span>
+          <span class="skills__item"
+            >React Native <progress value="90" max="100"
+          /></span>
+        </article>
+        <article class="skills__content">
+          <h2 class="skills__title">Design</h2>
+          <span class="skills__item"
+            >Figma <progress value="65" max="100"
+          /></span>
+          <span class="skills__item"
+            >Photoshop <progress value="80" max="100"
+          /></span>
+        </article>
+      </section>
+      <section class="experience">
+        <h2>Experiences</h2>
+        <article class="experience-item">
+          <div class="experience__logo experience__logo--adidas"></div>
+          <section class="experience__content">
+            <header>
+              <p class="experience-item__date">Feb 2017 - Current</p>
+              <h3 class="experience-item__title">Front-end developer</h3>
+            </header>
+            <p class="experience-item__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+              aliquid provident impedit?
+            </p>
+          </section>
+        </article>
+        <article class="experience-item">
+          <div class="experience__logo experience__logo--hm"></div>
+          <section class="experience__content">
+            <header>
+              <p class="experience-item__date">Aug 2016 - Feb 2017</p>
+              <h3 class="experience-item__title">Full-Stack developer</h3>
+            </header>
+            <p class="experience-item__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+              aliquid provident impedit?
+            </p>
+          </section>
+        </article>
+        <article class="experience-item">
+          <div class="experience__logo experience__logo--nivea"></div>
+          <section class="experience__content">
+            <header>
+              <p class="experience-item__date">Jun 2015 - Aug 2016</p>
+              <h3 class="experience-item__title">Junior front-end developer</h3>
+            </header>
+            <p class="experience-item__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+              aliquid provident impedit?
+            </p>
+          </section>
+        </article>
+      </section>
+      <section class="projects">
+        <h2 class="projects__title">
+          Projects (<span id="projectsNumber">3</span>)
+        </h2>
+        <article class="project-item">
+          <div class="project-item__picture"></div>
+          <section class="project-item__content">
+            <div class="project-item__tags">
+              <span>#HTML </span>
+              <span> #CSS </span>
+              <span> #responsive</span>
+            </div>
+            <h3 class="project-item__title">Recipe Blog</h3>
+            <p class="project-item__description">
+              In this project, I work with HTML and CSS to create a responsive
+              page . The design is from devchallenge.io. Donec aliquam est dui,
+              vel vestibulum diam sollicitudin id. Quisque feugiat malesuada
+              molestie.
+            </p>
+            <footer class="project-item__footer">
+              <button class="button button--demo">Demo</button>
+              <button class="button button--code">Code</button>
+            </footer>
+          </section>
+        </article>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+        <article class="project-item">
+          <div class="project-item__picture"></div>
+          <section class="project-item__content">
+            <div class="project-item__tags">
+              <span>#HTML </span>
+              <span> #CSS </span>
+              <span> #responsive</span>
+            </div>
+            <h3 class="project-item__title">My Gallery</h3>
+            <p class="project-item__description">
+              In this project, I work with HTML and CSS to create a responsive
+              page . The design is from devchallenge.io. Donec aliquam est dui,
+              vel vestibulum diam sollicitudin id. Quisque feugiat malesuada
+              molestie.
+            </p>
+            <footer class="project-item__footer">
+              <button class="button button--demo">Demo</button>
+              <button class="button button--code">Code</button>
+            </footer>
+          </section>
+        </article>
+
+        <article class="project-item">
+          <div class="project-item__picture"></div>
+          <section class="project-item__content">
+            <div class="project-item__tags">
+              <span>#HTML </span>
+              <span> #CSS </span>
+              <span> #responsive</span>
+            </div>
+            <h3 class="project-item__title">Checkout</h3>
+            <p class="project-item__description">
+              In this project, I work with HTML and CSS to create a responsive
+              page . The design is from devchallenge.io. Donec aliquam est dui,
+              vel vestibulum diam sollicitudin id. Quisque feugiat malesuada
+              molestie.
+            </p>
+            <footer class="project-item__footer">
+              <button class="button button--demo">Demo</button>
+              <button class="button button--code">Code</button>
+            </footer>
+          </section>
+        </article>
+      </section>
+
+      <section class="hobbies">
+        <h2 class="hobbies__title">Hobbies</h2>
+        <article class="hobbies-item">
+          <div class="hobbies-item__picture"></div>
+          <section class="hobbies-item__content">
+            <h3 class="project-item__title">Gaming</h3>
+            <p class="project-item__description">
+              Quisque feugiat malesuada molestie.
+            </p>
+          </section>
+        </article>
+        <article class="hobbies-item">
+          <div class="hobbies-item__picture"></div>
+          <section class="hobbies-item__content">
+            <h3 class="project-item__title">Cooking</h3>
+            <p class="project-item__description">
+              Quisque feugiat malesuada molestie.
+            </p>
+          </section>
+        </article>
+        <article class="hobbies-item">
+          <div class="hobbies-item__picture"></div>
+          <section class="hobbies-item__content">
+            <h3 class="project-item__title">Biking</h3>
+            <p class="project-item__description">
+              Quisque feugiat malesuada molestie.
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section class="blog">
+        <h2 class="blog__title">Blogs (1)</h2>
+        <article class="blog-post">
+          <div class="blog__picture"></div>
+          <section class="blog__content">
+            <h3 class="blog-post__title">How to organize your CSS</h3>
+            <p class="blog-post__description">
+              In this article I tell the story about Proin eu justo sit amet
+              lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi.
+              Donec aliquam est dui, vel vestibulum diam sollicitudin id.
+              Quisque feugiat malesuada molestie.
+            </p>
+            <a class="blog-post__link" href="#">dev.to</a>
+          </section>
+        </article>
+      </section>
     </div>
+    <footer class="footer">
+      <span>created by AlbertcacV - devChallenges.io</span>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,344 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 2rem auto;
+  width: 85%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  position: relative;
+}
+.header {
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  position: relative;
+}
+
+.header__photo {
+  width: 271.86px;
+  height: 266.14px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.header__title {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4f4f4f;
+}
+
+.header__subtitle {
+  margin-top: 0.2rem;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+}
+
+.contact {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4f4f4f;
+}
+
+.contact__icon {
+  display: inline-block;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.header__description {
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+}
+
+/** SKILLS SECTION */
+
+.skills {
+  margin-top: 4rem;
+  color: #4f4f4f;
+}
+
+.skills__content {
+  border-radius: 12px;
+  margin-top: 3rem;
+}
+
+.skills__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.skills__item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/** EXPERIENCE SECTION */
+
+.experience {
+  margin-top: 3rem;
+}
+
+.experience-item {
+  width: 100%;
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience-item__description {
+  margin-top: 2rem;
+}
+.experience__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-item__date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.experience-item__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+.experience__logo {
+  height: 5rem;
+  width: 15rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.experience__logo--adidas {
+  background-image: url('./assets/images/adidas.jpg');
+}
+
+.experience__logo--hm {
+  background-image: url('./assets/images/hm.jpg');
+}
+
+.experience__logo--nivea {
+  background-image: url('./assets/images/nivea.png');
+}
+
+/** PROJECTS SECTION */
+
+.projects {
+  margin-top: 4rem;
+}
+
+.projects__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 4rem;
+}
+
+.project-item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.project-item__tags {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4f4f4f;
+}
+
+.project-item__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+  margin-top: 1rem;
+}
+
+.project-item__picture {
+  background-image: url('assets/images/projectPicture.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 50em;
+  margin-right: 20px;
+  border-radius: 12px;
+}
+
+.project-item__description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 1rem;
+  word-wrap: break-word;
+}
+
+.project-item__footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  border-radius: 12px;
+  width: 85px;
+  height: 46px;
+  border: 0;
+}
+
+.button--demo {
+  background: #2f80ed;
+  color: white;
+}
+
+.button--code {
+  background: #ffffff;
+  color: #2f80ed;
+  border: 1px solid #2f80ed;
+}
+
+/** HOBBIES SECTION */
+.hobbies__title {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4f4f4f;
+}
+
+.hobbies-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.hobbies-item__picture {
+  background-image: url('assets/images/hobbies.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 7rem;
+  border-radius: 12px;
+}
+
+.project-item__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.project-item__description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+
+/** BLOG SECTION */
+
+.blog__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4f4f4f;
+}
+
+.blog-post {
+  margin: 2rem 0;
+}
+
+.blog__picture {
+  background-image: url('assets/images/blog.jpg');
+  height: 10rem;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blog__content {
+  margin-top: 1rem;
+}
+
+.blog-post__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #333333;
+}
+
+.blog-post__description {
+  margin: 1rem 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.blog-post__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2f80ed;
+}
+
+.footer {
+  padding: 10px;
+  border-top: 1px solid gray;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+}
+
+/** MEDIA QUERIES */
+@media screen and (min-width: 700px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 50%;
+  }
+}
