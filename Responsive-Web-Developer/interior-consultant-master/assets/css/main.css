@@ -1,0 +1,242 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background: #181719;
+
+  position: relative;
+}
+.container {
+  padding: 10px;
+  z-index: 1;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.header__logo {
+  border: 1px solid white;
+  width: 120px;
+  height: 31px;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  margin-top: 2rem;
+  width: 100%;
+  color: white;
+}
+
+.description__title {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.description__paragraph {
+  width: 250px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.description__span {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.description__arrow {
+  margin-left: 15px;
+}
+
+/** Designs */
+
+.designs {
+  z-index: -1;
+  margin-top: 2rem;
+  width: 100%;
+  position: relative;
+}
+
+.designs__photo {
+  max-width: 100%;
+}
+
+/** Card */
+
+.card {
+  width: 280px;
+  position: absolute;
+  top: 12.5rem;
+  left: 30px;
+
+  background: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card__header {
+  display: flex;
+}
+.card__picture {
+  padding: 10px;
+  border-radius: 50%;
+  height: 60px;
+}
+
+.card__titles {
+  margin-left: 10px;
+}
+
+.card__name {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.card__job {
+  margin-top: 5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #828282;
+}
+
+.card__description {
+  margin: 0;
+  margin-bottom: 25px;
+  display: inline-block;
+  width: 210px;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+}
+
+/** footer */
+
+.footer {
+  margin-top: 10rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+.footer__link {
+  font-weight: bold;
+  color: #a9a9a9;
+}
+
+/** nav menu */
+.btn-container {
+  height: 20px;
+  width: 29px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.header__btn {
+  border: 0;
+  height: 3px;
+  width: 29px;
+  position: relative;
+  background: #f2f2f2;
+}
+.header__btn::after {
+  content: '';
+  height: 3px;
+  width: 29px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background: #f2f2f2;
+}
+
+.header__btn::before {
+  content: '';
+  height: 3px;
+  width: 29px;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background: #f2f2f2;
+}
+
+.btn-container {
+  z-index: 10;
+}
+
+.modal {
+  z-index: 10;
+  position: absolute;
+  background: #181719;
+}
+
+.modal--hidden {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.modal--visible {
+  z-index: 100;
+  width: 95vw;
+
+}
+
+/* .header__nav--visible {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95vw;
+  height: 100vh; */
+
+/* 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px; 
+  */
+
+.nav__item {
+  list-style: none;
+  padding: 0;
+}

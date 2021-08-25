@@ -1,95 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Interior Consultant Challenge</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
+    <section class="modal modal--hidden" id="modal">
+      <nav id="header__nav" class="header__nav">
+        <li class="nav__item">
+          <a href="#">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Collection</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Contact</a>
+        </li>
+      </nav>
+    </section>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <span>this interior</span>
+        </div>
+        <div class="btn-container">
+          <button id="header__btn" class="header__btn" />
+        </div>
+      </header>
+      <section class="description">
+        <h1 class="description__title">Modern interior</h1>
+        <p class="description__paragraph">
+          A full-Service residential & commercial interior design and staging
+          company offering professional organizing & eco-services.
         </p>
-      </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+        <span class="description__span">Read more</span
+        ><span class="description__arrow">➡</span>
+      </section>
+
+      <section class="designs">
+        <div>
+          <img
+            src="assets/images/photo1.png"
+            alt="desing picture"
+            class="designs__photo"
+          />
+        </div>
+        <article class="card">
+          <header class="card__header">
+            <img
+              src="assets/images/photo2.png"
+              alt="Aliza Webber"
+              class="card__picture"
+            />
+            <section class="card__titles">
+              <h3 class="card__name">Aliza Webber</h3>
+              <h4 class="card__job">Interior designer</h4>
+            </section>
+          </header>
+          <h2 class="card__description">Designed in 2020 by Aliza Webber</h2>
+        </article>
+      </section>
+
+      <footer class="footer" id="footer">
+        <p>
+          created by
+          <a
+            class="footer__link"
+            href="https://devchallenges.io/portfolio/Albertcacv"
+            >Albertcacv</a
+          >
+          - devChallanges.io
+        </p>
+      </footer>
     </div>
   </body>
 </html>
