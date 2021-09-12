@@ -9,66 +9,65 @@
     <title>Interior Consultant Challenge</title>
   </head>
   <body>
-    <section class="modal modal--hidden" id="modal">
-      <nav id="header__nav" class="header__nav">
-        <li class="nav__item">
-          <a href="#">Home</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">Collection</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">About</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">Contact</a>
-        </li>
-      </nav>
-    </section>
     <div class="container">
       <header class="header">
         <div class="header__logo">
           <span>this interior</span>
         </div>
         <div class="btn-container">
-          <button id="header__btn" class="header__btn" />
+          <button id="header-btn" class="header__btn" />
         </div>
+
+        <nav id="header-nav" class="header__nav nav--hidden">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Collection</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+        </nav>
       </header>
-      <section class="description">
-        <h1 class="description__title">Modern interior</h1>
-        <p class="description__paragraph">
-          A full-Service residential & commercial interior design and staging
-          company offering professional organizing & eco-services.
-        </p>
+      <main>
+        <section class="description">
+          <h1 class="description__title">Modern interior</h1>
+          <p class="description__paragraph">
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </p>
 
-        <span class="description__span">Read more</span
-        ><span class="description__arrow">➡</span>
-      </section>
-
-      <section class="designs">
-        <div>
-          <img
-            src="assets/images/photo1.png"
-            alt="desing picture"
-            class="designs__photo"
-          />
-        </div>
-        <article class="card">
-          <header class="card__header">
+          <span class="description__span">Read more</span
+          ><span class="description__arrow">➡</span>
+        </section>
+        <section class="designs">
+          <div>
             <img
-              src="assets/images/photo2.png"
-              alt="Aliza Webber"
-              class="card__picture"
+              src="assets/images/photo1.png"
+              alt="desing picture"
+              class="designs__photo"
             />
-            <section class="card__titles">
-              <h3 class="card__name">Aliza Webber</h3>
-              <h4 class="card__job">Interior designer</h4>
-            </section>
-          </header>
-          <h2 class="card__description">Designed in 2020 by Aliza Webber</h2>
-        </article>
-      </section>
-
+          </div>
+          <!-- <article class="card">
+            <header class="card__header">
+              <img
+                src="assets/images/photo2.png"
+                alt="Aliza Webber"
+                class="card__picture"
+              />
+              <section class="card__titles">
+                <h3 class="card__name">Aliza Webber</h3>
+                <h4 class="card__job">Interior designer</h4>
+              </section>
+            </header>
+            <h2 class="card__description">Designed in 2020 by Aliza Webber</h2>
+          </article> -->
+        </section>
+      </main>
       <footer class="footer" id="footer">
         <p>
           created by

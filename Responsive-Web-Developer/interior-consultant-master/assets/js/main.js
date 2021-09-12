@@ -1,15 +1,17 @@
-const btn = document.getElementById('header__btn')
-const modal = document.getElementById('modal')
+const btn = document.getElementById('header-btn')
+const headerNav = document.getElementById('header-nav')
 
 btn.addEventListener('click', () => {
   //Modal no visible
-  if (modal.classList.contains('modal--hidden')) {
-    modal.classList.remove('modal--hidden')
-    modal.classList.add('modal--visible')
+  if (headerNav.classList.contains('nav--hidden')) {
+    headerNav.classList.remove('nav--hidden')
+    headerNav.classList.add('nav--visible')
+    btn.classList.add('btn--close')
 
     //Modal visible
   } else {
-    modal.classList.remove('modal--visible')
-    modal.classList.add('modal--hidden')
+    headerNav.classList.remove('nav--visible')
+    headerNav.classList.add('nav--hidden')
+    btn.classList.remove('btn--close')
   }
 })
