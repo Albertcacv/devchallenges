@@ -1,95 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1,
   maximum-scale=5"
-    />
+		/>
 
-    <link rel="icon" href="devchallenges.png" />
+		<link rel="icon" href="devchallenges.png" />
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="https://devchallenges.io/"
+		/>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
 
-    <title>Devchallenges</title>
+		<link href="assets/css/normalize.css" rel="stylesheet" />
+		<link href="assets/css/index.css" rel="stylesheet" />
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
+		<title>Edi Homepage Challenge</title>
+	</head>
+	<body>
+		<div class="wrapper-content">
+			<header>
+				<span class="header__logo">Edie</span>
+				<label for="toggle" class="hamburger">
+					<div class="top-bun"></div>
+					<div class="meat"></div>
+					<div class="bottom-bun"></div>
+				</label>
+			</header>
+			<section class="hero">
+				<span>Unhappy with your website?</span>
+				<p>We create beautiful and fast web services</p>
+				<img src="assets/images/heroImage.jpg" alt="hero image" class="hero__img"/>
+				<span>Story, emotion and purpose</span>
+				<p>
+					We help transform your ideas into real world applications that will
+					outperform your toughest competition and help you achieve your
+					strategic goals in short period of time.
+				</p>
 
-      ul {
-        padding-left: 24px;
-      }
+				<form class="footer-contact__form">
+					<label>Want us to contact you</label>
+					<div>
+						<input
+							class="footer-contact__input"
+							type="text"
+							placeholder="Email"
+						/>
+						<button class="footer-contact__button" type="submit">Join</button>
+					</div>
+				</form>
+			</section>
+		</div>
+		<section class="services">
+			<span>We offer high demand services</span>
+			<article>
+				<span>UI/UX Design</span>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus
+					ac nulla consequat aliquet id quis turpis.
+				</p>
+				<button>Get started</button>
+			</article>
+			<article>
+				<span>Front End</span>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus
+					ac nulla consequat aliquet id quis turpis.
+				</p>
+				<button>Get started</button>
+			</article>
+			<article>
+				<span>Back End</span>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus
+					ac nulla consequat aliquet id quis turpis.
+				</p>
+				<button>Get started</button>
+			</article>
+		</section>
+		<section class="designs">
+			<span>Good design means good business</span>
+			<article>
+				<img src="assets/images/smarthome.jpg" alt="placeholder image" />
+				<span>Full stack application</span>
+				<span>Smart home dashboard</span>
+			</article>
+			<article>
+				<img src="assets/images/smarthome.jpg" alt="placeholder image" />
+				<span>Full stack application</span>
+				<span>Smart home dashboard</span>
+			</article>
+			<article>
+				<img src="assets/images/smarthome.jpg" alt="placeholder image" />
+				<span>Full stack application</span>
+				<span>Smart home dashboard</span>
+			</article>
+			<article>
+				<img src="assets/images/smarthome.jpg" alt="placeholder image" />
+				<span>Full stack application</span>
+				<span>Smart home dashboard</span>
+			</article>
+			<button>see more &#8594;</button>
+		</section>
+		<section class="team">
+			<span>Meet the team</span>
+			<p>We are chilled and a laidback team</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<section class="team-members">
+				<img src="assets/images/person3.png" />
+				<img src="assets/images/person1.png" />
+				<img src="assets/images/person2.png" />
+			</section>
+			<p>
+				“Fast and outstanding resutls. Edie understands their customer’s needs.
+				They have a young and talented team.”
+			</p>
 
-      li {
-        margin-bottom: 8px;
-      }
+			<img src="assets/images/person4.png" />
+			<span>Carlos Tran</span>
+			<span>The Decorate Gatsby</span>
+		</section>
+		<footer>
+			<ul class="footer-links">
+				<li>Home</li>
+				<li>Services</li>
+				<li>Our Works</li>
+				<li>Clients</li>
+				<li>Contact</li>
+			</ul>
+			<article class="footer-social">
+				<span>Edie</span>
+				<ul class="footer-social__list">
+					<li class="footer-social__item">
+						<img src="assets/images/instagram.svg" />
+					</li>
+					<li class="footer-social__item">
+						<img src="assets/images/linkedin.svg" />
+					</li>
+					<li class="footer-social__item">
+						<img src="assets/images/twitter.svg" />
+					</li>
+				</ul>
+			</article>
+			<section class="footer-contact">
+				<form class="footer-contact__form">
+					<label>Want us to contact you</label>
+					<div>
+						<input
+							class="footer-contact__input"
+							type="text"
+							placeholder="Email"
+						/>
+						<button class="footer-contact__button" type="submit">Join</button>
+					</div>
+				</form>
+			</section>
 
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
-  </body>
+			<span
+				>created by <a href="https://github.com/Albertcacv"> AlbertcacV </a>💯 -
+				devChallenges.io</span
+			>
+		</footer>
+	</body>
 </html>

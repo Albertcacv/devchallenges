@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	--footer-bg: #100e1d;
+}
+body {
+	font-family: 'Poppins';
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 5px;
+}
+
+footer {
+	color: #fff;
+	background-color: var(--footer-bg);
+	height: 30%;
+}
+.wrapper-content {
+	padding: 0 10px;
+}
+
+/*HEADER */
+
+.header__logo {
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 35px;
+}
+
+.hamburger {
+	position: relative;
+	height: 100%;
+	margin-right: 2em;
+}
+
+.hamburger div {
+	position: relative;
+	width: 30px;
+	height: 3px;
+	border-radius: 3px;
+	background-color: #000;
+	margin-top: 4px;
+}
+
+/* HERO */
+
+.hero {
+	margin-top: 3em;
+}
+
+.hero__img {
+	width: 100%;
+	border-radius: 18px;
+}
+
+.footer-links,
+.footer-social__list {
+	list-style: none;
+	padding: 0;
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footer-social__list {
+	display: flex;
+}
+
+.footer-contact__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-contact__input {
+	border-radius: 12px;
+}
+
+.footer-contact__button {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	color: #f2f2f2;
+	background: #2d9cdb;
+	border-radius: 12px;
+	border: 0;
+}
