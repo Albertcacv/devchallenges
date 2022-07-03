@@ -1,95 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1,
   maximum-scale=5"
-    />
+		/>
 
-    <link rel="icon" href="devchallenges.png" />
+		<link rel="icon" href="devchallenges.png" />
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="https://devchallenges.io/"
+		/>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
 
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
-  </body>
+		<link rel="stylesheet" href="assets/css/normalize.css" />
+		<link rel="stylesheet" href="assets/css/index.css" />
+		<title>Recipe Blog Challenge</title>
+	</head>
+	<body>
+      <header>
+        <img src="assets/images/profilePhoto.png" class="header__img" />
+        <h1 class="header__title">Rodney Cotton</h1>
+        <span class="header__subtitle">Helsinki, Finland</span>
+        <section class="header-info">
+          <article class="header-info-item">
+            <span class="header-info-team__title">100</span>
+            <span class="header-info-team__subtitle">Posts</span>
+          </article>
+          <article class="header-info-item">
+            <span class="header-info-team__title">2,242</span>
+            <span class="header-info-team__subtitle">Followers</span>
+          </article>
+          <article class="header-info-item">
+            <span class="header-info-team__title">1,432</span>
+            <span class="header-info-team__subtitle">Following</span>
+          </article>
+        </section>
+      </header>
+  
+      <section class="gallery">
+        <img
+          src="assets/images/photo1.png"
+          class="gallery__img gallery__img--first"
+        />
+        <img
+          src="assets/images/photo2.png"
+          class="gallery__img gallery__img--second"
+        />
+        <img
+          src="assets/images/photo3.png"
+          class="gallery__img gallery__img--third"
+        />
+        <img
+          src="assets/images/photo4.png"
+          class="gallery__img gallery__img--fourth"
+        />
+        <img
+          src="assets/images/photo6.png"
+          class="gallery__img gallery__img--fifth"
+        />
+        <img
+          src="assets/images/photo5.png"
+          class="gallery__img gallery__img--sixth"
+        />
+      </section>
+		<footer>
+			created by
+			<a href="https://github.com/Albertcacv" target="_blank">Albertcacv</a>💯 -
+			devChallenges.io
+		</footer>
+	</body>
 </html>

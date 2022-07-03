@@ -27,41 +27,40 @@
 		<title>Edi Homepage Challenge</title>
 	</head>
 	<body>
-		<div class="wrapper-content">
-			<header>
-				<span class="header__logo">Edie</span>
-				<label for="toggle" class="hamburger">
-					<div class="top-bun"></div>
-					<div class="meat"></div>
-					<div class="bottom-bun"></div>
-				</label>
-			</header>
-			<section class="hero">
-				<span>Unhappy with your website?</span>
-				<p>We create beautiful and fast web services</p>
-				<img src="assets/images/heroImage.jpg" alt="hero image" class="hero__img"/>
-				<span>Story, emotion and purpose</span>
-				<p>
-					We help transform your ideas into real world applications that will
-					outperform your toughest competition and help you achieve your
-					strategic goals in short period of time.
-				</p>
+		<header>
+			<span class="header__logo">Edie</span>
+			<label for="toggle" class="hamburger">
+				<div class="top-bun"></div>
+				<div class="meat"></div>
+				<div class="bottom-bun"></div>
+			</label>
+		</header>
+		<section class="hero">
+			<span class="hero__subtitle">Unhappy with your website?</span>
+			<p class="hero__title">We create beautiful and fast web services</p>
+			<!-- <img
+				src="assets/images/heroImage.jpg"
+				alt="hero image"
+				class="hero__img"
+			/> -->
+			<span class="hero__title">Story, emotion and purpose</span>
+			<p class="hero__description">
+				We help transform your ideas into real world applications that will
+				outperform your toughest competition and help you achieve your strategic
+				goals in short period of time.
+			</p>
 
-				<form class="footer-contact__form">
-					<label>Want us to contact you</label>
-					<div>
-						<input
-							class="footer-contact__input"
-							type="text"
-							placeholder="Email"
-						/>
-						<button class="footer-contact__button" type="submit">Join</button>
-					</div>
-				</form>
-			</section>
-		</div>
+			<form class="form">
+				<label class="form__label">Want us to contact you</label>
+				<div>
+					<input class="form__input" type="text" placeholder="Email" />
+					<button class="form__button" type="submit">Join</button>
+				</div>
+			</form>
+		</section>
+
 		<section class="services">
-			<span>We offer high demand services</span>
+			<span class="services__title">We offer high demand services</span>
 			<article>
 				<span>UI/UX Design</span>
 				<p>
@@ -88,46 +87,56 @@
 			</article>
 		</section>
 		<section class="designs">
-			<span>Good design means good business</span>
+			<span class="designs__title">Good design means good business</span>
 			<article>
-				<img src="assets/images/smarthome.jpg" alt="placeholder image" />
+				<!-- <img src="assets/images/smarthome.jpg" alt="placeholder image" /> -->
 				<span>Full stack application</span>
 				<span>Smart home dashboard</span>
 			</article>
 			<article>
-				<img src="assets/images/smarthome.jpg" alt="placeholder image" />
+				<!-- <img src="assets/images/smarthome.jpg" alt="placeholder image" /> -->
 				<span>Full stack application</span>
 				<span>Smart home dashboard</span>
 			</article>
 			<article>
-				<img src="assets/images/smarthome.jpg" alt="placeholder image" />
+				<!-- <img src="assets/images/smarthome.jpg" alt="placeholder image" /> -->
 				<span>Full stack application</span>
 				<span>Smart home dashboard</span>
 			</article>
 			<article>
-				<img src="assets/images/smarthome.jpg" alt="placeholder image" />
+				<!-- <img src="assets/images/smarthome.jpg" alt="placeholder image" /> -->
 				<span>Full stack application</span>
 				<span>Smart home dashboard</span>
 			</article>
 			<button>see more &#8594;</button>
 		</section>
 		<section class="team">
-			<span>Meet the team</span>
-			<p>We are chilled and a laidback team</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<span class="team__intro">Meet the team</span>
+			<p class="team__title">We are chilled and a laidback team</p>
+			<p class="team__subtitle">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</p>
 			<section class="team-members">
-				<img src="assets/images/person3.png" />
-				<img src="assets/images/person1.png" />
-				<img src="assets/images/person2.png" />
+				<article class="team-member__left">
+					<img src="assets/images/person3.png" class="team-member__image" />
+				</article>
+				<article class="team-member__right">
+					<img src="assets/images/person1.png" class="team-member__image" />
+					<img src="assets/images/person2.png" class="team-member__image" />
+				</article>
 			</section>
-			<p>
+			<p class="team__qoute">
 				“Fast and outstanding resutls. Edie understands their customer’s needs.
 				They have a young and talented team.”
 			</p>
 
-			<img src="assets/images/person4.png" />
-			<span>Carlos Tran</span>
-			<span>The Decorate Gatsby</span>
+			<article class="team-decorate">
+				<img src="assets/images/person4.png" class="team-decorate__image" />
+				<div class="team-decorate__info">
+					<span class="team-decorate__title">Carlos Tran</span>
+					<span class="team-decorate__subtitle">The Decorate Gatsby</span>
+				</div>
+			</article>
 		</section>
 		<footer>
 			<ul class="footer-links">
@@ -152,15 +161,11 @@
 				</ul>
 			</article>
 			<section class="footer-contact">
-				<form class="footer-contact__form">
-					<label>Want us to contact you</label>
+				<form class="form">
+					<label class="form__label">Want us to contact you</label>
 					<div>
-						<input
-							class="footer-contact__input"
-							type="text"
-							placeholder="Email"
-						/>
-						<button class="footer-contact__button" type="submit">Join</button>
+						<input class="form__input" type="text" placeholder="Email" />
+						<button class="form__button" type="submit">Join</button>
 					</div>
 				</form>
 			</section>
