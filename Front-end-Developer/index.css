@@ -1,0 +1,82 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: rgba(128, 128, 128, 0.418);
+}
+.container {
+	width: 90%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	color: black;
+}
+
+.gallery {
+	padding: 2rem;
+	width: 100%;
+	display: grid;
+	justify-items: center;
+	grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+	grid-template-rows: auto;
+	gap: 3rem;
+}
+
+.card__link {
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+}
+
+.card:hover {
+	border: 4px solid white;
+	border-radius: 9px;
+}
+
+.card {
+	width: 100%;
+	background-color: #2a2b2f;
+	color: white;
+	border-radius: 9px;
+	border: 4px solid transparent;
+	padding: 15px;
+	color: white;
+}
+
+.card__img {
+	width: 100%;
+	height: 200px;
+	border-radius: 9px;
+	object-fit: cover;
+}
+
+.card__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card__icon {
+	border: 1px groove white;
+	width: 40px;
+	height: 35px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card__description {
+	width: 320px;
+}

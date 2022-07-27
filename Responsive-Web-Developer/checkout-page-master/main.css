@@ -1,0 +1,179 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2 {
+	margin: 0;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 15px;
+}
+
+input,
+select {
+	border: 1px solid #828282;
+	border-radius: 12px;
+	height: 40.56px;
+	padding-left: 10px;
+	margin-top: 5px;
+}
+
+select {
+	width: 162.98px;
+}
+
+header {
+	display: flex;
+	width: 100%;
+	max-width: 727px;
+}
+
+::placeholder {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.product {
+	display: flex;
+	margin-bottom: 2rem;
+	gap: 1rem;
+}
+
+.product__image {
+	transform: rotate(-0.02deg);
+	border-radius: 15px;
+	width: 160px;
+	margin-left: 20px;
+}
+
+.product-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.product__title {
+	margin-bottom: 10px;
+}
+
+.summary {
+	display: flex;
+	flex-direction: column;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	margin: 0 20px;
+}
+
+.summary-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.item {
+	border: 1px solid #828282;
+	border-radius: 12px;
+	height: 49.86px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.item__button {
+	background: #e0e0e0;
+	border-radius: 4px;
+	border: 0;
+	color: #828282;
+	font-size: 24px;
+}
+.information {
+	padding: 10px;
+}
+.form,
+.form__input {
+	display: flex;
+	flex-direction: column;
+}
+
+.form__input {
+	padding: 10px 0;
+}
+
+.form__save {
+	gap: 0.3rem;
+	color: #4f4f4f;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 12px;
+	display: flex;
+	align-items: center;
+}
+
+.form__submit {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.submit_button {
+	background: #f2994a;
+	border-radius: 12px;
+	border: 0;
+	padding: 17px 45px;
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+}
+.border {
+	border-top: 1px solid #bdbdbd;
+	border-bottom: 1px solid #bdbdbd;
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+
+.orange {
+	color: #f2994a;
+}
+
+.strikethrough {
+	text-decoration: line-through;
+}
+
+.flex {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.mr15 {
+	margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	.information {
+		order: 1;
+	}
+
+	.preview {
+		order: 2;
+	}
+}
